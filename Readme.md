@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Павел Панасов](https://up.htmlacademy.ru/htmlcss/31/user/1792675).
-* Наставник: `Неизвестно`.
+* Наставник: [Егор Глебов](https://htmlacademy.ru/profile/beast).
 
 ---
 
