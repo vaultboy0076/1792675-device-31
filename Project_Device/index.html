@@ -2,9 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Девайс</title>
-  </head>
-  <body>
+    <title>HTML Ac
 
     <!--<p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>-->
     
@@ -13,38 +11,51 @@
     <header>
     	<nav>
     	<a>
-    		<img src="GitHub/1792675-device-31/Project_Device/img/logo/-e-logo.svg" width="163" height="34" alt="Логотип DEVICE">
+    		<img src="img/logo/-e-logo.svg" width="163" height="34" alt="Логотип DEVICE">
     	</a>
     	<ul>
-    		<li><a href="#"><img src="GitHub/1792675-device-31/Project_Device/img/icons/search.svg" width="12" height="12" alt="Поиск по сайту">Поиск по сайту</a></li>
-    		<li><a href="#"><img src="GitHub/1792675-device-31/Project_Device/img/icons/b_sign_in.svg" width="8" height="9" alt="Войти">Войти</a></li>
-    		<li><a href="#"><img src="GitHub/1792675-device-31/Project_Device/img/icons/b_compare.svg" width="8" height="8" alt="Сравнить">Сравнить</a></li>
-    		<li><a href="#"><img src="#" alt="Корзина">Корзина</a></li>
-    		<li><a href="GitHub/1792675-device-31/Project_Device/catalog.html">каталог товаров</a></li>
-    		<li><a href="#">доставка</a></li>
-    		<li><a href="#">гарантия</a></li>
-    		<li><a href="#">контакты</a></li>
-    	</ul>
+            <li><a href="#"><img src="img/icons/search.svg" width="12" height="12" alt="Поиск по сайту">Поиск по сайту</a></li>
+            <li><a href="#"><img src="img/icons/b_sign_in.svg" width="8" height="9" alt="Войти">Войти</a></li>
+            <li><a href="#"><img src="img/icons/b_compare.svg" width="8" height="8" alt="Сравнить">Сравнить</a></li>
+            <li><a href="#"><img src="#" alt="Корзина">Корзина</a></li>
+        </ul>
+        <!--Так или в ещё один тег nav обернуть?-->
+        <ul>
+            <li><a>каталог товаров</a></li>
+            <li><a href="#">доставка</a></li>
+            <li><a href="#">гарантия</a></li>
+            <li><a href="#">контакты</a></li>
+        </ul>
     	</nav>
     </header>
     <section>
-    	<a href="#"><img src="GitHub/1792675-device-31/Project_Device/img/slider/slider-3_1.svg" width="526" height="344" alt="Квадрокоптер"></a>
+    	<a href="#"><img src="img/slider/slider-3_1.svg" width="526" height="344" alt="Квадрокоптер"></a>
     	<h2>Порхает как бабочка, жалит как пчела!</h2>
     	<p>Этот обычный, на первый взгляд, квадрокоптер оснащен<br> мощным лазером, замаскированным под стандартную камеру.</p>
-        <button type="button">подробнее</button>
-        <button type="button"></button>
-        <button type="button"></button>
-        <button type="button"></button>
-        <div>
-            <p>800 м</p>
-            <p>Дальность полета</p>
+        <!--Исправил убрал кнопки.-->
+        <a href="#">подробнее</a>
+        <!--Поменял дивы с параграфами на таблицу.-->
+        <table>
+            <tr>
+                <td>800 м</td>
+                <td>Дальность полета</td>
+            </tr>
+            <tr>
+                <td>50 м</td>
+                <td>Радиус поражения</td>
+            </tr>
+        </table>
+        <!--<div>
+            <p></p>
+            <p></p>
         </div>
         <div>
-            <p>50 м</p>
-            <p>Радиус поражения</p>
-        </div>
+            <p></p>
+            <p>Р</p>
+        </div>-->
     </section>
     <main>
+        <!--ДОБАВИТЬ ЕЩЁ ДВА СЛАЙДЕРА!!! СКРЫТЫЕ СЛОИ???-->
         <section>
             <!--Тут должны быть спрайты но возникли затруднения-->
 
@@ -61,23 +72,25 @@
         <button type="button">доставка</button>
         <button type="button">гарантия</button>
         <button type="button">кредит</button>
-        <!--<img src="C:\Users\user9\Documents\GitHub\1792675-device-31\Project Device\img\Rectangle 12.svg" alt="">-->
         <h3>Доставка</h3>
         <div>
-            <span>
+            <!--Исправил span на p.-->
+            <p>
                 Мы с удовольствием доставим ваш товар прямо к вашему <br> 
                 подъезду совершенно бесплатно! Ведь мы неплохо <br> 
                 заработаем, поднимая его на ваш этаж.
-            </span>
-            <img src="#" alt="Доставка">
+            </p>
+            <!--Что ты имел виду "ДЕКОРАТИВНОЕ ИЗОБРАЖЕНИЕ"? Не понял.
+                <img src="#" alt="Доставка">-->
+            
         </div>
     </section>
     <section>
         <ul>
-            <li><a href="#"><img src="GitHub/1792675-device-31/Project_Device/img/brands/logo-1_1.svg" width="260" height="100" alt="Бренд"></a></li>
-            <li><a href="#"><img src="GitHub/1792675-device-31/Project_Device/img/brands/logo-2_1.svg" width="260" height="100" alt="Бренд"></a></li>
-            <li><a href="#"><img src="GitHub/1792675-device-31/Project_Device/img/brands/logo-3_1.svg" width="260" height="100" alt="Бренд"></a></li>
-            <li><a href="#"><img src="GitHub/1792675-device-31/Project_Device/img/brands/logo-4_1.svg" width="260" height="100" alt="Бренд"></a></li>
+            <li><a href="#"><img src="img/brands/logo-1_1.svg" width="260" height="100" alt="Бренд"></a></li>
+            <li><a href="#"><img src="img/brands/logo-2_1.svg" width="260" height="100" alt="Бренд"></a></li>
+            <li><a href="#"><img src="img/brands/logo-3_1.svg" width="260" height="100" alt="Бренд"></a></li>
+            <li><a href="#"><img src="img/brands/logo-4_1.svg" width="260" height="100" alt="Бренд"></a></li>
         </ul>
     </section>
     <section>
@@ -98,17 +111,17 @@
             <h4>Контакты</h4>
             <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете <br>
             проверить работоспособность покупки. Всякое бывает.</p>
-            <a href="C:/Users/user9/Documents/GitHub/1792675-device-31/Project_Device/index_map.html"><img src="GitHub/1792675-device-31/Project_Device/img/map_1.svg" width="560" height="222" alt="Карта"></a>
-            <a href="C:/Users/user9/Documents/GitHub/1792675-device-31/Project_Device/index_modal.html">напишите нам</a>
+            <a href="index_map.html"><img src="img/map_1.svg" width="560" height="222" alt="Карта"></a>
+            <a href="index_modal.html">напишите нам</a>
         </div>
     </section>
     </main>
     <footer>
         <section>
-            <a><img src="GitHub/1792675-device-31/Project_Device/img/logo/yellow-e-logo.svg" width="163" height="34" alt="Логотип DEVICE"></a>
+            <a><img src="img/logo/yellow-e-logo.svg" width="163" height="34" alt="Логотип DEVICE"></a>
             <p>Санкт-Петербург, набережная <br>
             реки Карповки, 5, литера П.</p>
-            <img src="GitHub/1792675-device-31/Project_Device/img/Rectangle_15.svg" alt="#">
+            <img src="img/Rectangle_15.svg" alt="#">
         </section>
         <section>
             <ul>
@@ -125,9 +138,9 @@
         </section>
         <section>
             <ul>
-                <li><a href="#"><img src="GitHub/1792675-device-31/Project_Device/img/icons/y_sign_in.svg" width="8" height="9" alt="Войти">Войти</a></li>
-                <li><a href="#"><img src="GitHub/1792675-device-31/Project_Device/img/icons/y_compare.svg" width="8" height="8" alt="Сравнить">Сравнить</a></li>
-                <li><a href="#"><img src="GitHub/1792675-device-31/Project_Device/img/icons/y_basket.svg" width="4" height="3" alt="Корзина">Корзина</a></li>
+                <li><a href="#"><img src="img/icons/y_sign_in.svg" width="8" height="9" alt="Войти">Войти</a></li>
+                <li><a href="#"><img src="img/icons/y_compare.svg" width="8" height="8" alt="Сравнить">Сравнить</a></li>
+                <li><a href="#"><img src="img/icons/y_basket.svg" width="4" height="3" alt="Корзина">Корзина</a></li>
             </ul>
             <p>Тел.:<a href="tel:+78005558628">+7 800 555-86-28</a></p>
             <a href="#"><img src="#" alt="ссылка hmml_academy"></a>
