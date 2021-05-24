@@ -17,11 +17,14 @@
     		<li><a href="#"><img src="img/icons/b_sign_in.svg" width="8" height="9" alt="Войти">Войти</a></li>
     		<li><a href="#"><img src="img/icons/b_compare.svg" width="8" height="8" alt="Сравнить">Сравнить</a></li>
     		<li><a href="#"><img src="#" alt="Корзина">Корзина</a></li>
-    		<li><a>каталог товаров</a></li>
-    		<li><a href="#">доставка</a></li>
-    		<li><a href="#">гарантия</a></li>
-    		<li><a href="#">контакты</a></li>
-    	</ul>
+        </ul>
+        <!--Так или в ещё один тег nav обернуть?-->
+        <ul>
+            <li><a>каталог товаров</a></li>
+            <li><a href="#">доставка</a></li>
+            <li><a href="#">гарантия</a></li>
+            <li><a href="#">контакты</a></li>
+        </ul>
     	</nav>
     </header>
     <main>
@@ -58,11 +61,8 @@
                         <label for="pink">Розовый</label>
                     </li>
                 </ul>
-                </fieldset>
-            </form>
-            <form method="get" action="https://echo.htmlacademy.ru">
-            	<fieldset>
-            	<legend>Bluetooth</legend>
+                <!--Так да?-->
+                <legend>Bluetooth</legend>
                 <ul>
                     <li>
                         <input type="radio" name="bluetooth" value="there" id="there" checked>
@@ -73,47 +73,38 @@
                         <label for="no">Нет</label>
                     </li>
                 </ul>
-            	</fieldset>
+                </fieldset>
             </form>
             <button type="submit">показать</button>
         </section>
-        <h1>сортировка:</h1>
+        <!--Поменял H1 на H2 возможно нужно другого уровня пока не решил.-->
+        <h2>сортировка:</h2>
         <button type="submit">По цене</button>
         <button type="submit">По типу</button>
         <button type="submit">По популярности</button>
         <button type="submit"><img src="img/triangle_up.svg" alt="#"></button>
         <button type="submit"><img src="img/triangle_down.svg" alt="#"></button>
         <section>
-            <ul>
-                <li>
-                    <a href="#">
-                        <p><img src="img/items/Rectangle_32.svg" alt="Любительская селфи-палка"></p>
-                    </a>
-                    <p>Любительская селфи-палка</p>
-                    <p>1 100 руб.</p>
-                </li>
-                <li>
-                    <a href="#">
-                        <p><img src="img/items/item-2_1.svg" alt="Профессиональная селфи-палка"></p>
-                        <p>Профессиональная селфи-палка</p>
-                        <p>1 500 руб.</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <p><img src="img/items/item-3_1.svg" alt="Непотопляемая селфи-палка"></p>
-                        <p>Непотопляемая селфи-палка</p>
-                        <p>1 500 руб.</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <p><img src="img/items/item-4_1.svg" alt="Селфи-палка «Следуй за мной"></p>
-                        <p>Селфи-палка «Следуй за мной»</p>
-                        <p>1 900 руб.</p>
-                    </a>
-                </li>
-            </ul>
+            <a href="#">
+                <p><img src="img/items/Rectangle_32.svg" alt="Любительская селфи-палка"></p>
+            </a>
+            <h3>Любительская селфи-палка</h3>
+            <p>1 100 руб.</p>
+            <a href="#">
+                <p><img src="img/items/item-2_1.svg" alt="Профессиональная селфи-палка"></p>
+            </a>
+            <h3>Профессиональная селфи-палка</h3>
+            <p>1 500 руб.</p>
+            <a href="#">
+                <p><img src="img/items/item-3_1.svg" alt="Непотопляемая селфи-палка"></p>
+            </a>
+            <h3>Непотопляемая селфи-палка</h3>
+            <p>1 500 руб.</p>
+            <a href="#">
+                <p><img src="img/items/item-4_1.svg" alt="Селфи-палка «Следуй за мной»"></p>
+            </a>
+            <h3>Селфи-палка «Следуй за мной»</h3>
+            <p>1 900 руб.</p>
         </section>
         <section>
             <button type="button">назад</button>
