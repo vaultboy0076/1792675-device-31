@@ -35,8 +35,9 @@
             <li><a href="#">Моноподы для селфи</a></li>
         </ul>
         <section>
-            <h2>фильтр:</h2>
+            
             <form method="get" action="https://echo.htmlacademy.ru">
+                <h2>фильтр:</h2>
                 <fieldset>
                 <legend>Цвет</legend>
                 <ul>
@@ -74,37 +75,58 @@
                     </li>
                 </ul>
                 </fieldset>
+                <button type="submit">показать</button>
             </form>
-            <button type="submit">показать</button>
-        </section>
-        <!--Поменял H1 на H2 возможно нужно другого уровня пока не решил.-->
-        <h2>сортировка:</h2>
+            <!--Или этот блок кнопок должен быть в форме которая выше? Пока не улавливаю логику :)-->
+            <form method="get" action="https://echo.htmlacademy.ru">
+                <h3>сортировка:</h3>
+                <fieldset>
+                    <input type="button" value="По цене">
+                    <input type="button" value="По типу">
+                    <input type="button" value="По популярности">
+                    <input type="button" value="#">
+                    <input type="button" value="#">
+                    <!--Две последние кнопки без value. Я знаю что по спецификации нельзя оставлять без значения
+                    но там будет подключаться JavaScript? Так как это кнопки фильтрации без названий.
+                    И еще в спецификации нельзя вставлять img > input. Эти треугольники будут подключаться css и создаваться canvas или фоном?-->
+                </fieldset>
+            </form>
+    <!--</section>
+        <h3>сортировка:</h3>
         <button type="submit">По цене</button>
         <button type="submit">По типу</button>
         <button type="submit">По популярности</button>
         <button type="submit"><img src="img/triangle_up.svg" alt="#"></button>
         <button type="submit"><img src="img/triangle_down.svg" alt="#"></button>
-        <section>
+        <section>-->
+            <section>
             <a href="#">
                 <p><img src="img/items/item-1_1.svg" alt="Любительская селфи-палка"></p>
             </a>
             <h3>Любительская селфи-палка</h3>
             <p>1 100 руб.</p>
+            </section>
+            <section>
             <a href="#">
                 <p><img src="img/items/item-2_1.svg" alt="Профессиональная селфи-палка"></p>
             </a>
             <h3>Профессиональная селфи-палка</h3>
             <p>1 500 руб.</p>
+            </section>
+            <section>
             <a href="#">
                 <p><img src="img/items/item-3_1.svg" alt="Непотопляемая селфи-палка"></p>
             </a>
             <h3>Непотопляемая селфи-палка</h3>
             <p>1 500 руб.</p>
+            </section>
+            <section>
             <a href="#">
                 <p><img src="img/items/item-4_1.svg" alt="Селфи-палка «Следуй за мной»"></p>
             </a>
             <h3>Селфи-палка «Следуй за мной»</h3>
             <p>1 900 руб.</p>
+            </section>
         </section>
         <section>
             <button type="button">назад</button>
