@@ -1,0 +1,260 @@
+@font-face {
+font-family: Gilroy, Open Sans;
+font-style: normal;
+font-weight: 800;
+src: url("../fonts/gilroyextrabold.woff2") format("woff2"),
+     url("../fonts/gilroylight.woff2") format("woff2"),
+     url("../fonts/opensans.woff2") format("woff2")
+	 url("../fonts/opensanslight.woff2") format("woff2");
+}
+:root {
+	--basic-black: #000000;
+	--special-yellow: #F7E296;
+	--special-yellow-light: #F7E296;
+	--special-yellow-dark: #F0C52E;
+	--basic-dark: #363636;
+	--basic-white: #FFFFFF;
+	--basic-grey-light: #E5E5E5;
+
+}
+.page {
+
+}
+li {
+	list-style-type: none;
+}
+a {
+	text-decoration: none;
+}
+.main_nav {
+background-color: var(--special-yellow);
+}
+.nav_list1:first-child {
+color: rgba(0, 0, 0, 0.3);
+}
+.nav_list1 {
+font-family: Open Sans, Arial, sans-serif;
+font-style: normal;
+font-weight: 300;
+font-size: 15px;
+line-height: 20px;
+}
+.nav_list1 a {
+color: var(--basic-black);
+}
+.searh {
+width: 12px;
+background: url("../img/icons/search.svg") no-repeat 12px 12px;
+}
+.nav_list2{
+font-family: Gilroy, Arial, sans-serif;
+font-style: normal;
+font-weight: 800;
+font-size: 18px;
+line-height: 22px;
+letter-spacing: 0.2em;
+text-transform: uppercase;
+color: var(--basic-black);
+}
+.slider_title {
+font-family: Gilroy, Arial, sans-serif;
+font-style: normal;
+font-weight: 800;
+font-size: 47px;
+line-height: 58px;
+color: var(--basic-black);
+}
+.slider_text {
+font-family: Open Sans, Arial, sans-serif;
+font-style: normal;
+font-weight: 300;
+font-size: 15px;
+line-height: 20px;
+color: var(--basic-black);
+}
+.button {
+font-family: Gilroy, Arial, sans-serif;
+font-style: normal;
+font-weight: 800;
+font-size: 18px;
+line-height: 22px;
+letter-spacing: 0.2em;
+text-transform: uppercase;
+background-color: var(--special-yellow-dark);
+color: var(--basic-black);
+}
+.slider_spec1{
+font-family: Gilroy, Arial, sans-serif;
+font-style: normal;
+font-weight: 300;
+font-size: 36px;
+line-height: 42px;
+letter-spacing: 0.1em;
+color: var(--basic-black);
+}
+.slider_spec2{
+font-family: Gilroy;
+font-style: normal;
+font-weight: 300;
+font-size: 13px;
+line-height: 15px;
+letter-spacing: 0.1em;
+color: var(--basic-black);
+}
+.popular_wrap {
+font-family: Gilroy, Arial, sans-serif;
+font-style: normal;
+font-weight: 800;
+font-size: 18px;
+line-height: 22px;
+letter-spacing: 0.05em;
+color: var(--basic-black);
+}
+.popular_item {
+background-color: var(--special-yellow-light);
+}
+.services_title {
+font-family: Gilroy, Arial, sans-serif;
+font-style: normal;
+font-weight: 800;
+font-size: 47px;
+line-height: 58px;
+letter-spacing: 0.2em;
+color: var(--basic-black);
+}
+.services_text {
+font-family: Open Sans, Arial, sans-serif;
+font-style: normal;
+font-weight: 300;
+font-size: 15px;
+line-height: 30px;
+letter-spacing: 0.1em;
+color: var(--basic-black);
+}
+.info_title {
+font-family: Gilroy, Arial, sans-serif;
+font-style: normal;
+font-weight: 800;
+font-size: 47px;
+line-height: 58px;
+letter-spacing: 0.2em;
+color: var(--basic-black);
+}
+.info_text {
+font-family: Gilroy, Arial, sans-serif;
+font-style: normal;
+font-weight: 300;
+font-size: 15px;
+line-height: 28px;
+letter-spacing: 0.2em;
+color: var(--basic-black);
+}
+.info_list {
+font-family: Gilroy, Arial, sans-serif;
+font-style: normal;
+font-weight: 800;
+font-size: 16px;
+line-height: 28px;
+color: var(--basic-black);
+}
+.adds_text {
+font-family: Open Sans, Arial, sans-serif;
+font-style: normal;
+font-weight: 300;
+font-size: 15px;
+line-height: 20px;
+color: var(--basic-black);
+}
+.decorative_strip {
+width: 80px;
+height: 7px;
+left: 140px;
+top: 239px;
+background: #FFC600;
+}
+.footer section ul {
+background: none;
+color: var(--basic-white);	
+}
+.footer .nav_list1 {
+color: var(--basic-white);	
+}
+.footer {
+background-color: var(--basic-dark);
+}
+/*Каталог*/
+.product_filter {
+background-color: var(--basic-grey-light);
+font-family: Open Sans, Arial, sans-serif;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 19px;
+color: var(--basic-black);
+}
+.product_filter fieldset h3 {
+font-weight: 800;
+font-size: 16px;
+line-height: 20px;
+}
+.product_filter fieldset input{
+font-weight: normal;
+}
+.product_name {
+font-family: Gilroy, Arial, sans-serif;
+font-style: normal;
+font-weight: 800;
+font-size: 16px;
+line-height: 18px;
+letter-spacing: 0.05em;
+color: var(--basic-black);
+}
+.product_price {
+font-family: Gilroy, Arial, sans-serif;
+font-style: normal;
+font-weight: 300;
+font-size: 18px;
+line-height: 22px;
+letter-spacing: 0.05em;
+color: var(--basic-black);
+}
+.button1 {
+font-family: Open Sans, Arial, sans-serif;
+font-style: normal;
+font-weight: 300;
+font-size: 13px;
+line-height: 18px;
+letter-spacing: 0.1em;
+color: var(--basic-black);
+}
+.pagination button {
+font-family: Gilroy, Arial, sans-serif;
+font-style: normal;
+font-weight: 800;
+font-size: 16px;
+line-height: 20px;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+color: var(--basic-black);
+background-color: #EBEBEB;
+}
+.pagination {
+background-color: #EBEBEB;
+}
+.popular_title{
+font-family: Gilroy, Arial, sans-serif;
+font-style: normal;
+font-weight: 800;
+font-size: 47px;
+line-height: 58px;
+color: var(--basic-black);
+}
+.breadcrumbs {
+font-family: Open Sans, Arial, sans-serif;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 19px;
+color: var(--basic-black);
+opacity: 0.3;
+}
