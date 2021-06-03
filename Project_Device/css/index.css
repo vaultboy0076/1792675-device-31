@@ -52,8 +52,9 @@ a {
 }
 
 .searh {
-	width: 12px;
-	background: url("../img/icons/search.svg") no-repeat 12px 12px;
+	width: 12.47px;
+	height: 47px;
+	background: url("../img/icons/search.svg")no-repeat;
 }
 
 .nav_list2{
@@ -128,6 +129,24 @@ a {
 
 .popular_item {
 	background-color: var(--special-yellow-light);
+}
+
+.delivery {
+	width: 136px;
+	height: 164px;
+	background: url("../img/icons/delivery_2.svg");
+}
+
+.warranty {
+	width: 171px;
+	height: 195px;
+	background: url("../img/icons/warranty_1.svg");
+}
+
+.credit {
+	width: 156px;
+	height: 188px;
+	background: url("../img/icons/credit_1.svg");
 }
 
 .services_title {
@@ -294,8 +313,4 @@ a {
 
 .pagination {
 	background-color: #EBEBEB;
-}
-
-.delivery {
-	background: url("../img/icons/delivery_2.svg") no-repeat 136px 164px;
 }
