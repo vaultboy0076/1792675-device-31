@@ -20,7 +20,7 @@ src: url("../fonts/gilroyextrabold.woff2") format("woff2"),
 }
 
 .page {
-
+	
 }
 
 li {
@@ -206,14 +206,6 @@ a {
 	line-height: 20px;
 	color: var(--basic-black);
 }
-
-/*.decorative_strip {
-	width: 80px;
-	height: 7px;
-	left: 140px;
-	top: 239px;
-	background: #FFC600;
-}*/
 
 .footer section ul {
 	background: none;
