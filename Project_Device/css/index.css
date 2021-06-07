@@ -276,6 +276,18 @@ a {
 .product_filter fieldset input{
 	font-weight: normal;
 }
+.product_item {
+	display: grid;
+	grid-template-columns: 468px 1fr;
+	 grid-column-start: 1;
+	 grid-column-end: 2;
+}
+
+.item_catalog {
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
 .product_name {
 	font-family: Gilroy, Arial, sans-serif;
 	font-style: normal;
