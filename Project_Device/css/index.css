@@ -2,14 +2,14 @@
 font-family: Gilroy, Open Sans;
 font-style: normal;
 font-weight: 800;
-src: url("/fonts/gilroyextrabold.woff2") format("woff2"),
-	url("/fonts/gilroyextrabold.woff") format("woff"),
-    url("/fonts/gilroylight.woff2") format("woff2"),
-    url("/fonts/gilroylight.woff") format("woff"),
-    url("/fonts/opensans.woff2") format("woff2"),
-    url("/fonts/opensans.woff") format("woff"),
-	url("/fonts/opensanslight.woff2") format("woff2"),
-	url("/fonts/opensanslight.woff") format("woff");
+src: url("../fonts/gilroyextrabold.woff2") format("woff2"),
+	url("../fonts/gilroyextrabold.woff") format("woff"),
+    url("../fonts/gilroylight.woff2") format("woff2"),
+    url("../fonts/gilroylight.woff") format("woff"),
+    url("../fonts/opensans.woff2") format("woff2"),
+    url("../fonts/opensans.woff") format("woff"),
+	url("../fonts/opensanslight.woff2") format("woff2"),
+	url("../fonts/opensanslight.woff") format("woff");
 }
 
 :root {
@@ -27,14 +27,14 @@ src: url("/fonts/gilroyextrabold.woff2") format("woff2"),
 	height: 100%;
 }
 
-.page-body {
+.page_body {
 	min-height: 100%;
-  display: grid;
-  grid-template-rows: min-content 1fr min-content;
-  align-content: start;
+	display: grid;
+	grid-template-rows: min-content 1fr min-content;
+	align-content: start;
 }
 
-.main-header {
+.main_header {
 
 }
 
@@ -46,19 +46,23 @@ a {
 	text-decoration: none;
 }
 
-.main_navigation {
+.main_header_navigation {
 	background-color: var(--special-yellow);
 	display: grid;
 	height: 300px;
 }
-
-.main-header {
+.main_header {
 	display: grid;
 }
 
-.main-header-logo {
+.main_header_logo {
 	order: 0;
 	justify-self: start;
+}
+
+.main_header_logo:hover img {
+	display: block;
+	background: url("../img/logo/logo1.svg")no-repeat;
 }
 
 .nav_list1:first-child {
@@ -210,6 +214,10 @@ a {
 	line-height: 30px;
 	letter-spacing: 0.1em;
 	color: var(--basic-black);
+}
+
+.brands li a:hover {
+	background: url("../img/brands/logo-1_1.svg.svg");
 }
 
 .info_title {
