@@ -173,19 +173,23 @@ a {
 .services.delivery {
 	/*width: 136px;
 	height: 164px;
-	background: var(--basic-grey-light) url("../img/icons/delivery_2.svg") no-repeat;*/
+	url("../img/icons/delivery_2.svg") no-repeat;*/
 }
 
 .services.warranty {
 	/*width: 171px;
 	height: 195px;
-	background: var(--basic-grey-light) url("../img/icons/warranty_1.svg") no-repeat;*/
+	url("../img/icons/warranty_1.svg") no-repeat;*/
 }
 
 .services.credit {
 	/*width: 156px;
 	height: 188px;
-	background: var(--basic-grey-light) url("../img/icons/credit_1.svg") no-repeat;*/
+	url("../img/icons/credit_1.svg") no-repeat;*/
+}
+
+.services {
+	background: var(--basic-grey-light)
 }
 
 .services_title {
@@ -206,6 +210,44 @@ a {
 	line-height: 30px;
 	letter-spacing: 0.1em;
 	color: var(--basic-black);
+}
+
+li a.brands_item {
+	width: 260px;
+	height: 100px;
+	display: block;
+}
+
+li a.brands_item.dji {
+	background: url("../img/brands/dji.png");
+}
+
+ li a.brands_item.dji:hover {
+	background: url("../img/brands/dji_target.png");
+}
+
+li a.brands_item.sp_gadgets {
+	background: url("../img/brands/sp_gadgets.png");
+}
+
+ li a.brands_item.sp_gadgets:hover {
+	background: url("../img/brands/sp_gadgets_target.png");
+}
+
+li a.brands_item.go_pro {
+	background: url("../img/brands/go_pro.png");
+}
+
+ li a.brands_item.go_pro:hover {
+	background: url("../img/brands/go_pro_target.png");
+}
+
+li a.brands_item.vive {
+	background: url("../img/brands/vive.png");
+}
+
+ li a.brands_item.vive:hover {
+	background: url("../img/brands/vive_target.png");
 }
 
 .info_title {
