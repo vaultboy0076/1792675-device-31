@@ -1,7 +1,7 @@
 @font-face {
 font-family: Gilroy, Open Sans;
 font-style: normal;
-font-weight: 800;
+font-weight: 800px;
 src: url("../fonts/gilroyextrabold.woff2") format("woff2"),
      url("../fonts/gilroylight.woff2") format("woff2"),
      url("../fonts/opensans.woff2") format("woff2")
@@ -23,14 +23,14 @@ src: url("../fonts/gilroyextrabold.woff2") format("woff2"),
 	height: 100%;
 }
 
-.page-body {
+.page_body {
 	min-height: 100%;
-  display: grid;
-  grid-template-rows: min-content 1fr min-content;
-  align-content: start;
+	display: grid;
+	grid-template-rows: min-content 1fr min-content;
+	align-content: start;
 }
 
-.main-header {
+.main_header {
 
 }
 
@@ -42,38 +42,38 @@ a {
 	text-decoration: none;
 }
 
-.main_navigation {
+.main_header_navigation {
 	background-color: var(--special-yellow);
 	display: grid;
 	height: 300px;
 }
 
-.main-header {
+.main_header {
 	display: grid;
 }
 
-.main-header-logo {
+.main_header_logo {
 	order: 0;
 	justify-self: start;
 }
 
-.nav_list1:first-child {
+.navigation_user_list:first-child {
 	color: rgba(0, 0, 0, 0.3);
 }
 
-.nav_list1 {
+.navigation_user_list {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	margin: 0;
-  padding: 0;
+	padding: 0;
 	font-family: Open Sans, Arial, sans-serif;
 	font-style: normal;
-	font-weight: 300;
+	font-weight: 300px;
 	font-size: 15px;
 	line-height: 20px;
 }
 
-.nav_list1 a {
+.navigation_user_list a {
 	color: var(--basic-black);
 }
 
@@ -83,14 +83,14 @@ a {
 	background: url("../img/icons/search.svg")no-repeat;
 }
 
-.nav_list2{
+.navigation_services_list {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	margin: 0;
-  padding: 0;
+	padding: 0;
 	font-family: Gilroy, Arial, sans-serif;
 	font-style: normal;
-	font-weight: 800;
+	font-weight: 800px;
 	font-size: 18px;
 	line-height: 22px;
 	letter-spacing: 0.2em;
@@ -101,7 +101,7 @@ a {
 .slider_title {
 	font-family: Gilroy, Arial, sans-serif;
 	font-style: normal;
-	font-weight: 800;
+	font-weight: 800px;
 	font-size: 47px;line-height: 58px;
 	color: var(--basic-black);
 }
@@ -109,7 +109,7 @@ a {
 .slider_text {
 	font-family: Open Sans, Arial, sans-serif;
 	font-style: normal;
-	font-weight: 300;
+	font-weight: 300px;
 	font-size: 15px;
 	line-height: 20px;
 	color: var(--basic-black);
@@ -118,7 +118,7 @@ a {
 .button {
 	font-family: Gilroy, Arial, sans-serif;
 	font-style: normal;
-	font-weight: 800;
+	font-weight: 800px;
 	font-size: 18px;
 	line-height: 22px;
 	letter-spacing: 0.2em;
@@ -127,20 +127,20 @@ a {
 	color: var(--basic-black);
 }
 
-.slider_spec1{
+.slider_termin{
 	font-family: Gilroy, Arial, sans-serif;
 	font-style: normal;
-	font-weight: 300;
+	font-weight: 300px;
 	font-size: 36px;
 	line-height: 42px;
 	letter-spacing: 0.1em;
 	color: var(--basic-black);
 }
 
-.slider_spec2 {
+.slider_definition {
 	font-family: Gilroy;
 	font-style: normal;
-	font-weight: 300;
+	font-weight: 300px;
 	font-size: 13px;
 	line-height: 15px;
 	letter-spacing: 0.1em;
@@ -150,7 +150,7 @@ a {
 .popular_wrap {
 	font-family: Gilroy, Arial, sans-serif;
 	font-style: normal;
-	font-weight: 800;
+	font-weight: 800px;
 	font-size: 18px;
 	line-height: 22px;
 	letter-spacing: 0.05em;
@@ -172,26 +172,26 @@ a {
 
 .services.delivery {
 	/*width: 136px;
-	height: 164px;*/
-	background: var(--basic-grey-light) url("../img/icons/delivery_2.svg") no-repeat;
+	height: 164px;
+	background: var(--basic-grey-light) url("../img/icons/delivery_2.svg") no-repeat;*/
 }
 
 .services.warranty {
 	/*width: 171px;
-	height: 195px;*/
-	background: var(--basic-grey-light) url("../img/icons/warranty_1.svg") no-repeat;
+	height: 195px;
+	background: var(--basic-grey-light) url("../img/icons/warranty_1.svg") no-repeat;*/
 }
 
 .services.credit {
 	/*width: 156px;
-	height: 188px;*/
-	background: var(--basic-grey-light) url("../img/icons/credit_1.svg") no-repeat;
+	height: 188px;
+	background: var(--basic-grey-light) url("../img/icons/credit_1.svg") no-repeat;*/
 }
 
 .services_title {
 	font-family: Gilroy, Arial, sans-serif;
 	font-style: normal;
-	font-weight: 800;
+	font-weight: 800px;
 	font-size: 47px;
 	line-height: 58px;
 	letter-spacing: 0.2em;
@@ -201,7 +201,7 @@ a {
 .services_text {
 	font-family: Open Sans, Arial, sans-serif;
 	font-style: normal;
-	font-weight: 300;
+	font-weight: 300px;
 	font-size: 15px;
 	line-height: 30px;
 	letter-spacing: 0.1em;
@@ -211,7 +211,7 @@ a {
 .info_title {
 	font-family: Gilroy, Arial, sans-serif;
 	font-style: normal;
-	font-weight: 800;
+	font-weight: 800px;
 	font-size: 47px;
 	line-height: 58px;
 	letter-spacing: 0.2em;
@@ -221,7 +221,7 @@ a {
 .info_text {
 	font-family: Gilroy, Arial, sans-serif;
 	font-style: normal;
-	font-weight: 300;
+	font-weight: 300px;
 	font-size: 15px;
 	line-height: 28px;
 	letter-spacing: 0.2em;
@@ -231,31 +231,31 @@ a {
 .info_list {
 	font-family: Gilroy, Arial, sans-serif;
 	font-style: normal;
-	font-weight: 800;
+	font-weight: 800px;
 	font-size: 16px;
 	line-height: 28px;
 	color: var(--basic-black);
 }
 
-.adds_text {
+.address_text {
 	font-family: Open Sans, Arial, sans-serif;
 	font-style: normal;
-	font-weight: 300;
+	font-weight: 300px;
 	font-size: 15px;
 	line-height: 20px;
 	color: var(--basic-black);
 }
 
-.main-footer section ul {
+.main_footer section ul {
 	background: none;
 	color: var(--basic-white);	
 }
 
-.main-footer .nav_list1 {
+.main_footer .nav_list1 {
 	color: var(--basic-white);	
 }
 
-.main-footer {
+.main_footer {
 	background-color: var(--basic-dark);
 }
 
@@ -265,14 +265,14 @@ a {
 	background-color: var(--basic-grey-light);
 	font-family: Open Sans, Arial, sans-serif;
 	font-style: normal;
-	font-weight: 300;
+	font-weight: 300px;
 	font-size: 14px;
 	line-height: 19px;
 	color: var(--basic-black);
 }
 
 .product_filter fieldset h3 {
-	font-weight: 800;
+	font-weight: 800px;
 	font-size: 16px;
 	line-height: 20px;
 }
@@ -295,7 +295,7 @@ a {
 .product_name {
 	font-family: Gilroy, Arial, sans-serif;
 	font-style: normal;
-	font-weight: 800;
+	font-weight: 800px;
 	font-size: 16px;
 	line-height: 18px;
 	letter-spacing: 0.05em;
@@ -305,7 +305,7 @@ a {
 .product_price {
 	font-family: Gilroy, Arial, sans-serif;
 	font-style: normal;
-	font-weight: 300;
+	font-weight: 300px;
 	font-size: 18px;
 	line-height: 22px;
 	letter-spacing: 0.05em;
@@ -315,7 +315,7 @@ a {
 .button1 {
 	font-family: Open Sans, Arial, sans-serif;
 	font-style: normal;
-	font-weight: 300;
+	font-weight: 300px;
 	font-size: 13px;
 	line-height: 18px;
 	letter-spacing: 0.1em;
@@ -325,7 +325,7 @@ a {
 .popular_title{
 	font-family: Gilroy, Arial, sans-serif;
 	font-style: normal;
-	font-weight: 800;
+	font-weight: 800px;
 	font-size: 47px;
 	line-height: 58px;
 	color: var(--basic-black);
@@ -335,7 +335,7 @@ a {
 .breadcrumbs {
 	font-family: Open Sans, Arial, sans-serif;
 	font-style: normal;
-	font-weight: 300;
+	font-weight: 300px;
 	font-size: 14px;
 	line-height: 19px;
 	color: var(--basic-black);
@@ -345,7 +345,7 @@ a {
 .pagination button {
 	font-family: Gilroy, Arial, sans-serif;
 	font-style: normal;
-	font-weight: 800;
+	font-weight: 800px;
 	font-size: 16px;
 	line-height: 20px;
 	letter-spacing: 0.1em;
