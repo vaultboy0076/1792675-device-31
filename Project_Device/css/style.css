@@ -50,21 +50,27 @@ a {
 
 .main_header {
 	display: grid;
-}
+} 
 
 .main_header_navigation a.main_header_logo {
 	width: 163,3px;
 	height: 34,96px;
+	/*Почему нельзя дробными указать размер 
+	devtool  сообщает недопустимое значение свойства.
+	С начала я подумал что это из-за особенностей формата SVG
+	но поменяв на PNG ничего не изменилось?
+	В интернете внятной инфы не нашел.*/
 	display: block;
 }
 
 .main_header_navigation a.main_header_logo {
-	background: url("../img/logo/logo.svg") width="163,3" height="34,96" no-repeat;
+	background: url("../img/logo/logo.svg"); /*width="163,3" height="34,96" no-repeat*/
 }
 
 .main_header_navigation a.main_header_logo:hover {
 	background: url("../img/logo/logo.svg");
 	opacity: 50%;
+	Не понял где брать значение прозрачности, поставил приблезительно.
 }
 
 .main_header_navigation a.main_header_logo:active {
@@ -78,6 +84,14 @@ a {
 
 ul.navigation_user_list li a {
 	color: var(--basic-black);
+}
+
+ul.navigation_user_list li a:hover {
+	opacity: 50%;
+}
+
+ul.navigation_user_list li a:active {
+	opacity: 15%;
 }
 
 .navigation_user_list {
