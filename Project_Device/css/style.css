@@ -1,12 +1,27 @@
 @font-face {
-font-family: Gilroy, Open Sans;
-font-style: normal;
-font-weight: 800px;
-src: url("../fonts/gilroyextrabold.woff2") format("woff2"),
-     url("../fonts/gilroylight.woff2") format("woff2"),
-     url("../fonts/opensans.woff2") format("woff2")
-	 url("../fonts/opensanslight.woff2") format("woff2");
+font-family: Gilroy;
+src: local("Gilroy Light")
+ url("../fonts/gilroylight.woff2") format("woff2");
 }
+
+@font-face {
+font-family: Gilroy;
+src: local("Gilroy Extra Bold")
+url("../fonts/gilroyextrabold.woff2") format("woff2");
+}
+
+@font-face {
+font-family: Open Sans;
+src: local("Open Sans")
+url("../fonts/opensans.woff2") format("woff2");
+}
+
+@font-face {
+font-family: Open Sans;
+src: local("Open Sans Light")
+url("../fonts/opensanslight.woff2") format("woff2");
+}
+
 
 :root {
 	--basic-black: #000000;
@@ -30,10 +45,6 @@ src: url("../fonts/gilroyextrabold.woff2") format("woff2"),
 	align-content: start;
 }
 
-.main_header {
-
-}
-
 li {
 	list-style-type: none;
 }
@@ -52,28 +63,22 @@ a {
 	display: grid;
 } 
 
-.main_header_navigation a.main_header_logo {
-	width: 163,3px;
-	height: 34,96px;
-	/*Почему нельзя дробными указать размер 
-	devtool  сообщает недопустимое значение свойства.
-	С начала я подумал что это из-за особенностей формата SVG
-	но поменяв на PNG ничего не изменилось?
-	В интернете внятной инфы не нашел.*/
+.main_header_navigation .main_header_logo {
+	width: 163px;
+	height: 35px;
 	display: block;
 }
 
-.main_header_navigation a.main_header_logo {
-	background: url("../img/logo/logo.svg"); /*width="163,3" height="34,96" no-repeat*/
+.main_header_navigation .main_header_logo {
+	background: url("../img/logo/logo.svg");
 }
 
-.main_header_navigation a.main_header_logo:hover {
+.main_header_navigation .main_header_logo:hover {
 	background: url("../img/logo/logo.svg");
 	opacity: 50%;
-	Не понял где брать значение прозрачности, поставил приблезительно.
 }
 
-.main_header_navigation a.main_header_logo:active {
+.main_header_navigation .main_header_logo:active {
 	background: url("../img/logo/logo.svg");
 	opacity: 15%;
 }
@@ -82,16 +87,16 @@ a {
 	color: rgba(0, 0, 0, 0.3);
 }
 
-ul.navigation_user_list li a {
+.navigation_user_list li a {
 	color: var(--basic-black);
 }
 
-ul.navigation_user_list li a:hover {
-	opacity: 50%;
+.navigation_user_list li a:hover {
+	opacity: 0.50;
 }
 
-ul.navigation_user_list li a:active {
-	opacity: 15%;
+.navigation_user_list li a:active {
+	opacity: 0.15;
 }
 
 .navigation_user_list {
@@ -101,18 +106,18 @@ ul.navigation_user_list li a:active {
 	padding: 0;
 	font-family: Open Sans, Arial, sans-serif;
 	font-style: normal;
-	font-weight: 300px;
+	font-weight: 300;
 	font-size: 15px;
 	line-height: 20px;
 }
 
-/*.searh {
+/*.navigation_searh {
 	width: 12.47px;
 	height: 47px;
 	background: url("../img/icons/search.svg")no-repeat;
 }*/
 
-ul.navigation_services_list li a {
+.navigation_services_list li a {
 	color: var(--basic-black);
 }
 
@@ -123,7 +128,7 @@ ul.navigation_services_list li a {
 	padding: 0;
 	font-family: Gilroy, Arial, sans-serif;
 	font-style: normal;
-	font-weight: 800px;
+	font-weight: 800;
 	font-size: 18px;
 	line-height: 22px;
 	letter-spacing: 0.2em;
@@ -137,7 +142,7 @@ ul.navigation_services_list li a {
 .slider_title {
 	font-family: Gilroy, Arial, sans-serif;
 	font-style: normal;
-	font-weight: 800px;
+	font-weight: 800;
 	font-size: 47px;line-height: 58px;
 	color: var(--basic-black);
 }
@@ -145,7 +150,7 @@ ul.navigation_services_list li a {
 .slider_text {
 	font-family: Open Sans, Arial, sans-serif;
 	font-style: normal;
-	font-weight: 300px;
+	font-weight: 300;
 	font-size: 15px;
 	line-height: 20px;
 	color: var(--basic-black);
@@ -154,7 +159,7 @@ ul.navigation_services_list li a {
 .button {
 	font-family: Gilroy, Arial, sans-serif;
 	font-style: normal;
-	font-weight: 800px;
+	font-weight: 800;
 	font-size: 18px;
 	line-height: 22px;
 	letter-spacing: 0.2em;
@@ -166,7 +171,7 @@ ul.navigation_services_list li a {
 .slider_termin{
 	font-family: Gilroy, Arial, sans-serif;
 	font-style: normal;
-	font-weight: 300px;
+	font-weight: 300;
 	font-size: 36px;
 	line-height: 42px;
 	letter-spacing: 0.1em;
@@ -176,7 +181,7 @@ ul.navigation_services_list li a {
 .slider_definition {
 	font-family: Gilroy;
 	font-style: normal;
-	font-weight: 300px;
+	font-weight: 300;
 	font-size: 13px;
 	line-height: 15px;
 	letter-spacing: 0.1em;
@@ -186,7 +191,7 @@ ul.navigation_services_list li a {
 .popular_wrap {
 	font-family: Gilroy, Arial, sans-serif;
 	font-style: normal;
-	font-weight: 800px;
+	font-weight: 800;
 	font-size: 18px;
 	line-height: 22px;
 	letter-spacing: 0.05em;
@@ -231,7 +236,7 @@ ul.navigation_services_list li a {
 .services_title {
 	font-family: Gilroy, Arial, sans-serif;
 	font-style: normal;
-	font-weight: 800px;
+	font-weight: 800;
 	font-size: 47px;
 	line-height: 58px;
 	letter-spacing: 0.2em;
@@ -241,55 +246,80 @@ ul.navigation_services_list li a {
 .services_text {
 	font-family: Open Sans, Arial, sans-serif;
 	font-style: normal;
-	font-weight: 300px;
+	font-weight: 300;
 	font-size: 15px;
 	line-height: 30px;
 	letter-spacing: 0.1em;
 	color: var(--basic-black);
 }
 
-li a.brands_item {
-	width: 260px;
+.brands_wrap {
+	width: 1180px;
 	height: 100px;
-	display: block;
+	display: grid;
 }
 
-li a.brands_item.dji {
-	background: url("../img/brands/dji.png");
-}
-
- li a.brands_item.dji:hover {
+.brands_item.dji li:hover {
 	background: url("../img/brands/dji_target.png");
 }
 
-li a.brands_item.sp_gadgets {
-	background: url("../img/brands/sp_gadgets.png");
-}
-
- li a.brands_item.sp_gadgets:hover {
+.brands_item.sp_gadgets li:hover {
 	background: url("../img/brands/sp_gadgets_target.png");
 }
 
-li a.brands_item.go_pro {
-	background: url("../img/brands/go_pro.png");
-}
-
- li a.brands_item.go_pro:hover {
+.brands_item.go_pro li:hover {
 	background: url("../img/brands/go_pro_target.png");
 }
 
-li a.brands_item.vive {
-	background: url("../img/brands/vive.png");
-}
-
- li a.brands_item.vive:hover {
+.brands_item.vive li:hover {
 	background: url("../img/brands/vive_target.png");
 }
+
+/*li .brands_item.dji {
+	background: url("../img/brands/dji.png");
+	display: grid;
+	grid-column: 1/2;
+}
+
+ li .brands_item.dji:hover {
+ 	grid-column: 1/2;
+	background: url("../img/brands/dji_target.png");
+}
+
+li .brands_item.sp_gadgets {
+	background: url("../img/brands/sp_gadgets.png");
+	grid-column: 2/3;
+}
+
+ li .brands_item.sp_gadgets:hover {
+	background: url("../img/brands/sp_gadgets_target.png");
+	grid-column: 2/3;
+}
+
+li .brands_item.go_pro {
+	background: url("../img/brands/go_pro.png");
+	grid-column: 3/4;	
+}
+
+ li .brands_item.go_pro:hover {
+	background: url("../img/brands/go_pro_target.png");
+	grid-column: 3/4;	
+}
+
+li .brands_item.vive {
+	background: url("../img/brands/vive.png");
+	grid-column: 4/-1;	
+}
+
+ li .brands_item.vive:hover {
+	background: url("../img/brands/vive_target.png");
+	grid-column: 4/-1;	
+}*/
 
 .info_title {
 	font-family: Gilroy, Arial, sans-serif;
 	font-style: normal;
-	font-weight: 800px;
+	font-weight: 800;
 	font-size: 47px;
 	line-height: 58px;
 	letter-spacing: 0.2em;
@@ -299,7 +329,7 @@ li a.brands_item.vive {
 .info_text {
 	font-family: Gilroy, Arial, sans-serif;
 	font-style: normal;
-	font-weight: 300px;
+	font-weight: 300;
 	font-size: 15px;
 	line-height: 28px;
 	letter-spacing: 0.2em;
@@ -309,7 +339,7 @@ li a.brands_item.vive {
 .info_list {
 	font-family: Gilroy, Arial, sans-serif;
 	font-style: normal;
-	font-weight: 800px;
+	font-weight: 800;
 	font-size: 16px;
 	line-height: 28px;
 	color: var(--basic-black);
@@ -318,7 +348,7 @@ li a.brands_item.vive {
 .address_text {
 	font-family: Open Sans, Arial, sans-serif;
 	font-style: normal;
-	font-weight: 300px;
+	font-weight: 300;
 	font-size: 15px;
 	line-height: 20px;
 	color: var(--basic-black);
@@ -343,14 +373,14 @@ li a.brands_item.vive {
 	background-color: var(--basic-grey-light);
 	font-family: Open Sans, Arial, sans-serif;
 	font-style: normal;
-	font-weight: 300px;
+	font-weight: 300;
 	font-size: 14px;
 	line-height: 19px;
 	color: var(--basic-black);
 }
 
 .product_filter fieldset h3 {
-	font-weight: 800px;
+	font-weight: 800;
 	font-size: 16px;
 	line-height: 20px;
 }
@@ -358,7 +388,7 @@ li a.brands_item.vive {
 .product_filter fieldset input{
 	font-weight: normal;
 }
-.product_item {
+.filter_item {
 	display: grid;
 	grid-template-columns: 468px 1fr;
 	 grid-column-start: 1;
@@ -373,7 +403,7 @@ li a.brands_item.vive {
 .product_name {
 	font-family: Gilroy, Arial, sans-serif;
 	font-style: normal;
-	font-weight: 800px;
+	font-weight: 800;
 	font-size: 16px;
 	line-height: 18px;
 	letter-spacing: 0.05em;
@@ -383,7 +413,7 @@ li a.brands_item.vive {
 .product_price {
 	font-family: Gilroy, Arial, sans-serif;
 	font-style: normal;
-	font-weight: 300px;
+	font-weight: 300;
 	font-size: 18px;
 	line-height: 22px;
 	letter-spacing: 0.05em;
@@ -393,7 +423,7 @@ li a.brands_item.vive {
 .button1 {
 	font-family: Open Sans, Arial, sans-serif;
 	font-style: normal;
-	font-weight: 300px;
+	font-weight: 300;
 	font-size: 13px;
 	line-height: 18px;
 	letter-spacing: 0.1em;
@@ -403,7 +433,7 @@ li a.brands_item.vive {
 .popular_title{
 	font-family: Gilroy, Arial, sans-serif;
 	font-style: normal;
-	font-weight: 800px;
+	font-weight: 800;
 	font-size: 47px;
 	line-height: 58px;
 	color: var(--basic-black);
@@ -413,7 +443,7 @@ li a.brands_item.vive {
 .breadcrumbs {
 	font-family: Open Sans, Arial, sans-serif;
 	font-style: normal;
-	font-weight: 300px;
+	font-weight: 300;
 	font-size: 14px;
 	line-height: 19px;
 	color: var(--basic-black);
@@ -423,7 +453,7 @@ li a.brands_item.vive {
 .pagination button {
 	font-family: Gilroy, Arial, sans-serif;
 	font-style: normal;
-	font-weight: 800px;
+	font-weight: 800;
 	font-size: 16px;
 	line-height: 20px;
 	letter-spacing: 0.1em;

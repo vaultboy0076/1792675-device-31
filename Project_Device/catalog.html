@@ -12,10 +12,10 @@
          <nav class="main_header_navigation">
             <a href="index.html" class="main_header_logo"></a>  
             <ul class="navigation_user_list">
-               <li><a href="#" class="searh"><img src="img/icons/search.svg" alt="Поиск по сайту" width="12" height="12">Поиск по сайту</a></li>
-               <li><a href="#"><img src="img/icons/b_sign_in.svg" width="8" height="9" alt="Войти">Войти</a></li>
-               <li><a href="#"><img src="img/icons/b_compare.svg" width="8" height="8" alt="Сравнить">Сравнить</a></li>
-               <li><a href="#"><img src="img/icons/b_basket.svg" alt="Корзина">Корзина</a></li>
+               <li><a href="#" class="navigation_searh"><img src="img/icons/search.svg" alt="" width="12" height="12">Поиск по сайту</a></li>
+               <li><a href="#"><img src="img/icons/b_sign_in.svg" width="8" height="9" alt="">Войти</a></li>
+               <li><a href="#"><img src="img/icons/b_compare.svg" width="8" height="8" alt="">Сравнить</a></li>
+               <li><a href="#"><img src="img/icons/b_basket.svg" alt="">Корзина</a></li>
             </ul>
             <ul class="navigation_services_list">
                <li><a href="#">каталог товаров</a></li>
@@ -32,11 +32,11 @@
             <li><a href="#">Каталог товаров</a></li>
             <li><a>Моноподы для селфи</a></li>
          </ul>
-         <form class="product_filter" method="get" action="https://echo.htmlacademy.ru">
+         <form class="product_wrap" method="get" action="https://echo.htmlacademy.ru">
             <h2>фильтр:</h2>
             <fieldset class="product_filter">
                <legend>Цвет</legend>
-               <ul class="product_item">
+               <ul class="filter_item">
                   <li>
                      <input type="checkbox" name="black" id="black" checked>
                      <label for="black">Чёрный</label>
@@ -58,23 +58,25 @@
                      <label for="pink">Розовый</label>
                   </li>
                </ul>
-               <legend>Bluetooth</legend>
-               <ul>
-                  <li>
-                     <input type="radio" name="bluetooth" value="there" id="there" checked>
-                     <label for="there">Есть</label>
-                  </li>
-                  <li>
-                     <input type="radio" name="bluetooth" value="no" id="no">
-                     <label for="no">Нет</label>
-                  </li>
-               </ul>
+               <fieldset>
+                  <legend>Bluetooth</legend>
+                  <ul>
+                     <li>
+                        <input type="radio" name="bluetooth" value="there" id="there" checked>
+                        <label for="there">Есть</label>
+                     </li>
+                     <li>
+                        <input type="radio" name="bluetooth" value="no" id="no">
+                        <label for="no">Нет</label>
+                     </li>
+                  </ul>
+               </fieldset>
             </fieldset>
             <button class="button" type="submit">показать</button>
          </form>
+         <h3>сортировка:</h3>
          <ul>
             <li>
-               <h3>сортировка:</h3>
                <a href="#">По цене</a>
                <a href="#">По типу</a>
                <a href="#">По популярности</a>
@@ -117,16 +119,16 @@
             </li>
          </ul>
          <section class="pagination">
-            <button type="button">назад</button>
-            <button type="button">1</button>
-            <button type="button">2</button>
-            <button type="button">3</button>
-            <button type="button">вперед</button>
+            <a href="#">назад</a>
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">вперед</a>
          </section>
       </main>
       <footer class="main_footer">
          <section>
-            <a><img src="img/logo/yellow_logo.svg" width="163" height="34" alt="Логотип DEVICE"></a>
+            <a href="index.html"><img src="img/logo/yellow_logo.svg" width="163" height="34" alt="Логотип DEVICE"></a>
             <p class="address_text">Санкт-Петербург, набережная <br> реки Карповки, 5, литера П.</p>
             <svg width="80" height="7">
                <line x1="0" y1="0" x2="80" y2="0" stroke="#FFC600" stroke-width="7"/>
@@ -146,9 +148,9 @@
          </section>
          <section>
             <ul class="navigation_user_list">
-               <li><a href="#"><img src="img/icons/y_sign_in.svg" width="8" height="9" alt="Войти">Войти</a></li>
-               <li><a href="#"><img src="img/icons/y_compare.svg" width="8" height="8" alt="Сравнить">Сравнить</a></li>
-               <li><a href="#"><img src="img/icons/y_basket.svg" width="4" height="3" alt="Корзина">Корзина</a></li>
+               <li><a href="#"><img src="img/icons/y_sign_in.svg" width="8" height="9" alt="">Войти</a></li>
+               <li><a href="#"><img src="img/icons/y_compare.svg" width="8" height="8" alt="">Сравнить</a></li>
+               <li><a href="#"><img src="img/icons/y_basket.svg" width="4" height="3" alt="">Корзина</a></li>
             </ul>
             <p class="contacts navigation_user_list">Тел.:<a href="tel:+78005558628">+7 800 555-86-28</a></p>
             <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo_htmlacademy.svg" width="115" height="33" alt="ссылка hmml_academy"></a>
