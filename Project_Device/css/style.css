@@ -135,8 +135,19 @@ a {
 	text-transform: uppercase;
 }
 
-.slider_h {
-	display: none;
+.visually-hidden {
+position: absolute;
+width: 1px;
+height: 1px;
+
+margin: -1px;
+border: 0;
+padding: 0;
+
+white-space: nowrap;
+clip-path: inset(100%);
+clip: rect(0 0 0 0);
+overflow: hidden;
 }
 
 .slider_title {
@@ -208,29 +219,34 @@ a {
 	height: 160px;
 	width: 160px;
 	background: var(--special-yellow-light)
-	url("../img/popular/popular-1.svg") 160px 160px no-repeat;
+	url("img/popular/popular-1.svg") 160px 160px no-repeat;
 }
 
 .services.delivery {
 	/*width: 136px;
 	height: 164px;
-	url("../img/icons/delivery_2.svg") no-repeat;*/
+	background: url("../img/icons/delivery_2.svg") no-repeat;*/
 }
 
 .services.warranty {
 	/*width: 171px;
 	height: 195px;
-	url("../img/icons/warranty_1.svg") no-repeat;*/
+	background: url("../img/icons/warranty_1.svg") no-repeat;*/
 }
 
 .services.credit {
 	/*width: 156px;
 	height: 188px;
-	url("../img/icons/credit_1.svg") no-repeat;*/
+	background: url("../img/icons/credit_1.svg") no-repeat;*/
 }
 
 .services {
 	background: var(--basic-grey-light)
+}
+
+.services_item {
+	display: grid;
+	grid-template: 3/3;
 }
 
 .services_title {
@@ -270,8 +286,11 @@ a {
 	height: 100px;
 }
 
+li.brands_item.dji img {
+	background: url("../img/brands/dji.png");
+}
 
-.brands_item.dji li:hover {
+li.brands_item.dji :hover {
 	background: url("../img/brands/dji_target.png");
 }
 
@@ -287,46 +306,10 @@ a {
 	background: url("../img/brands/vive_target.png");
 }
 
-/*li .brands_item.dji {
-	background: url("../img/brands/dji.png");
+.about_info {
 	display: grid;
-	grid-column: 1/2;
+	grid-template-columns: repeat(2, 1fr);
 }
-
- li .brands_item.dji:hover {
- 	grid-column: 1/2;
-	background: url("../img/brands/dji_target.png");
-}
-
-li .brands_item.sp_gadgets {
-	background: url("../img/brands/sp_gadgets.png");
-	grid-column: 2/3;
-}
-
- li .brands_item.sp_gadgets:hover {
-	background: url("../img/brands/sp_gadgets_target.png");
-	grid-column: 2/3;
-}
-
-li .brands_item.go_pro {
-	background: url("../img/brands/go_pro.png");
-	grid-column: 3/4;	
-}
-
- li .brands_item.go_pro:hover {
-	background: url("../img/brands/go_pro_target.png");
-	grid-column: 3/4;	
-}
-
-li .brands_item.vive {
-	background: url("../img/brands/vive.png");
-	grid-column: 4/-1;	
-}
-
- li .brands_item.vive:hover {
-	background: url("../img/brands/vive_target.png");
-	grid-column: 4/-1;	
-}*/
 
 .info_title {
 	font-family: Gilroy, Arial, sans-serif;
@@ -366,17 +349,59 @@ li .brands_item.vive {
 	color: var(--basic-black);
 }
 
-.main_footer section ul {
-	background: none;
-	color: var(--basic-white);	
-}
-
-.main_footer .nav_list1 {
-	color: var(--basic-white);	
-}
-
 .main_footer {
 	background-color: var(--basic-dark);
+	margin-top: 86px;
+	padding: 46px 0px 65px 0px;
+}
+
+.main_footer a, .main_footer li a, .main_footer p  {
+	color: var(--basic-white);
+}
+
+
+.navigation_services_list .footer li a {
+	color: var(--basic-black);
+	margin: 0;
+	padding: 0;
+	font-family: Gilroy, Arial, sans-serif;
+	font-style: normal;
+	font-weight: 800;
+	font-size: 18px;
+	line-height: 22px;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+	display: block;
+}
+
+.container_footer{
+	width: 1150px;
+	margin: 0 auto;
+    padding: 0 10px;
+}
+
+.main_footer .container section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.navigation_user_list.footer {
+	margin: 0;
+	padding: 0;
+	font-family: Open Sans, Arial, sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 15px;
+	line-height: 20px;
+	display: block;
+}
+
+.address_text {
+	display: block;
+}
+
+.social {
+	display: block;
 }
 
 /*Каталог*/
