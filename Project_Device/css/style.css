@@ -278,7 +278,10 @@ overflow: hidden;
 	column-gap: 40px;
 	margin: 0;
 	padding: 0;
-	text-align: center;
+}
+
+.brands_wrap {
+	margin: 93px 0px 93px 0px;
 }
 
 .brands_item {
@@ -286,24 +289,9 @@ overflow: hidden;
 	height: 100px;
 }
 
-li.brands_item.dji img {
-	background: url("../img/brands/dji.png");
-}
 
-li.brands_item.dji :hover {
-	background: url("../img/brands/dji_target.png");
-}
-
-.brands_item.sp_gadgets li:hover {
-	background: url("../img/brands/sp_gadgets_target.png");
-}
-
-.brands_item.go_pro li:hover {
-	background: url("../img/brands/go_pro_target.png");
-}
-
-.brands_item.vive li:hover {
-	background: url("../img/brands/vive_target.png");
+.brands_item :hover {
+	filter: grayscale(100%);
 }
 
 .about_info {
