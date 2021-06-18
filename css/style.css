@@ -11,13 +11,13 @@ url("../fonts/gilroyextrabold.woff2") format("woff2");
 }
 
 @font-face {
-font-family: Open Sans;
+font-family: "Open Sans";
 src: local("Open Sans")
 url("../fonts/opensans.woff2") format("woff2");
 }
 
 @font-face {
-font-family: Open Sans;
+font-family: "Open Sans";
 src: local("Open Sans Light")
 url("../fonts/opensanslight.woff2") format("woff2");
 }
@@ -81,6 +81,19 @@ a {
 .main_header_navigation .main_header_logo:active {
 	background: url("../img/logo/logo.svg");
 	opacity: 15%;
+}
+
+.navigation_user_list_item:before {
+	content: "";
+	position: absolute;
+	top: px;
+	left: px;
+	width: px;
+	height: px;
+	background-image: url("img/.svg"):
+	background-repeat: no-repeat;
+	background-position: 0 0;
+
 }
 
 .navigation_user_list:first-child {
@@ -347,7 +360,6 @@ overflow: hidden;
 	color: var(--basic-white);
 }
 
-
 .navigation_services_list .footer li a {
 	color: var(--basic-black);
 	margin: 0;
@@ -413,11 +425,11 @@ overflow: hidden;
 .product_filter fieldset input{
 	font-weight: normal;
 }
-.filter_item {
+.product .filter_item {
 	display: grid;
-	grid-template-columns: 468px 1fr;
-	 grid-column-start: 1;
-	 grid-column-end: 2;
+	grid-template-areas: 
+	"filter_item filter_item"
+	"filter_item filter_item";
 }
 
 .item_catalog {
