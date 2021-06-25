@@ -83,14 +83,13 @@ a {
 	opacity: 15%;
 }
 
-.navigation_user_list_item:before {
+ li.navigation_user_list_item:before {
 	content: "";
 	position: absolute;
-	top: px;
-	left: px;
-	width: px;
-	height: px;
-	background-image: url("img/.svg"):
+	left: -15px;
+	width: 9px;
+	height: 9px;
+	background-image: url("img/icons/search.svg");
 	background-repeat: no-repeat;
 	background-position: 0 0;
 
@@ -101,7 +100,7 @@ a {
 }
 
 .navigation_user_list li a {
-	color: var(--basic-black);"
+	color: var(--basic-black);
 }
 
 .navigation_user_list li a:hover {
@@ -270,6 +269,8 @@ a {
 }
 
 .services {
+	width: 100%;
+	height: 288px;
 	background: var(--basic-grey-light)
 }
 
@@ -277,7 +278,7 @@ a {
 	
 }
 
-.services_title {
+.services_title:before {
 	font-family: Gilroy, Arial, "sans-serif";
 	font-style: normal;
 	font-weight: 800;
@@ -285,6 +286,10 @@ a {
 	line-height: 58px;
 	letter-spacing: 0.2em;
 	color: var(--basic-black);
+	width: 279px;
+	height: 58px;
+	left: 300px;
+	display: block;
 }
 
 .services_text {
@@ -359,6 +364,13 @@ a {
 	font-size: 16px;
 	line-height: 28px;
 	color: var(--basic-black);
+}
+
+.social_button_wrap {
+	width: 136px;
+	height: 32px;
+	display: flex;
+	justify-self: space-between;
 }
 
 .address_text {
