@@ -147,6 +147,9 @@ a {
 	letter-spacing: 0.2em;
 	text-transform: uppercase;
 }
+.navigation_services_list:first-child {
+	padding: 324px;
+}
 
 .visually-hidden {
 	position: absolute;
@@ -391,7 +394,9 @@ a {
 	text-align: left;
 }
 
-
+.footer_logo_htmlacademy {
+	margin: 68px 0px 64px 0px;
+}
 
 .main_footer {
 	background-color: var(--basic-dark);
@@ -437,6 +442,7 @@ a {
 
 .address_text {
 	display: block;
+	padding:  40px 0px 60px 0px;
 }
 
 /*Каталог*/
@@ -460,7 +466,8 @@ a {
 .product_filter fieldset input{
 	font-weight: normal;
 }
-.filter_item {
+
+.product {
 	display: grid;
 	grid-template-areas: 
 	"filter_item filter_item"
