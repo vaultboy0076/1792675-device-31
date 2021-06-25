@@ -45,6 +45,30 @@ url("../fonts/opensanslight.woff2") format("woff2");
 	align-content: start;
 }
 
+/*.page-catalog {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  align-content: start;
+  outline: 5px solid rgba(255, 0, 0, 0.7);
+  outline-offset: -5px;
+}
+
+.page-catalog .popular_title {
+  grid-column: 1 / -1;
+  outline: 5px solid rgba(0, 255, 0, 0.7);
+  outline-offset: -5px;
+}
+
+.page-catalog .breadcrumbs {
+  outline: 5px solid rgba(0, 0, 255, 0.7);
+  outline-offset: -5px;
+}
+
+.product_filter {
+  outline: 5px solid rgba(255, 0, 255, 0.7);
+  outline-offset: -5px;
+}*/
+
 li {
 	list-style-type: none;
 }
@@ -472,6 +496,7 @@ a {
 	grid-template-areas: 
 	"filter_item filter_item"
 	"filter_item filter_item";
+	padding: 0px;
 }
 
 .item_catalog {
