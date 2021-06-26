@@ -1,27 +1,42 @@
 @font-face {
-font-family: Gilroy;
-src: local("Gilroy Light")
- url("../fonts/gilroylight.woff2") format("woff2");
-}
-
-@font-face {
-font-family: Gilroy;
-src: local("Gilroy Extra Bold")
-url("../fonts/gilroyextrabold.woff2") format("woff2");
-}
-
-@font-face {
-font-family: "Open Sans";
-src: local("Open Sans")
-url("../fonts/opensans.woff2") format("woff2");
-}
-
-@font-face {
-font-family: "Open Sans";
-src: local("Open Sans Light")
-url("../fonts/opensanslight.woff2") format("woff2");
-}
-
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans'), local('Open-Sans'),
+         url('../fonts/opensans.woff2') format('woff2'),
+         url('../fonts/opensans.woff') format('woff');
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Open Sans Light'), local('Open-Sans-Light'),
+         url('../fonts/opensanslight.woff2') format('woff2'),
+         url('../fonts/opensanslight.woff') format('woff');
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Gilroy Light'), local('Gilroy-Light'),
+         url('../fonts/gilroylight.woff2') format('woff2'),
+         url('../fonts/gilroylight.woff') format('woff');
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 800;
+    src: local('Gilroy Extra Bold'), local('Gilroy-Extra-Bold'),
+         url('../fonts/gilroyextrabold.woff2') format('woff2'),
+         url('../fonts/gilroyextrabold.woff') format('woff');
+    font-display: swap;
+  }
 
 :root {
 	--basic-black: #000000;
@@ -93,21 +108,21 @@ a {
 	display: block;
 }
 
-.main_header_navigation .main_header_logo {
+.main_header_logo {
 	background: url("../img/logo/logo.svg");
 }
 
-.main_header_navigation .main_header_logo:hover {
+.main_header_logo:hover {
 	background: url("../img/logo/logo.svg");
 	opacity: 50%;
 }
 
-.main_header_navigation .main_header_logo:active {
+.main_header_logo:active {
 	background: url("../img/logo/logo.svg");
 	opacity: 15%;
 }
 
- li.navigation_user_list_item:before {
+/*.navigation_user_list_item:before {
 	content: "";
 	position: absolute;
 	left: -15px;
@@ -116,22 +131,31 @@ a {
 	background-image: url("img/icons/search.svg");
 	background-repeat: no-repeat;
 	background-position: 0 0;
+}*/
 
+.search_website {
+	font-family: "OpenSans","Arial", sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 15px;
+	line-height: 20px;
+	color: rgba(0, 0, 0, 0.3);
+	background-color: var(--special-yellow);
 }
 
 .navigation_user_list:first-child {
 	color: rgba(0, 0, 0, 0.3);
 }
 
-.navigation_user_list li a {
+.navigation_user_list_link{
 	color: var(--basic-black);
 }
 
-.navigation_user_list li a:hover {
+.navigation_user_list_link:hover {
 	opacity: 0.50;
 }
 
-.navigation_user_list li a:active {
+.navigation_user_list_link:active {
 	opacity: 0.15;
 }
 
@@ -192,7 +216,8 @@ a {
 	font-family: Gilroy, Arial, "sans-serif";
 	font-style: normal;
 	font-weight: 800;
-	font-size: 47px;line-height: 58px;
+	font-size: 47px;
+	line-height: 58px;
 	color: var(--basic-black);
 }
 
@@ -218,16 +243,16 @@ a {
 	display: inline-block;
 }
 
-.btn_map {
+.button_map {
 	margin-top: 85px;
 
 }
 
-.btn_about {
+.button_about {
 	margin-top: 84px;
 }
 
-.slider_termin{
+.slider_termin {
 	font-family: Gilroy, Arial, "sans-serif";
 	font-style: normal;
 	font-weight: 300;
@@ -252,7 +277,7 @@ a {
 	font-style: normal;
 	font-weight: 800;
 	font-size: 18px;
-	line-height: 22px;"
+	line-height: 22px;
 	letter-spacing: 0.05em;
 	color: var(--basic-black);
 }
@@ -359,7 +384,7 @@ a {
 	margin: 0 140px 0 140px;
 }
 
-.about {"
+.about {
 	width: 473px;
 	margin-right: 127px;
 }
@@ -419,7 +444,7 @@ a {
 }
 
 .footer_logo_htmlacademy {
-	margin: 68px 0px 64px 0px;
+	margin: 68px 0px 64px;
 }
 
 .main_footer {
@@ -534,7 +559,7 @@ a {
 	color: var(--basic-black);
 }
 
-.popular_title{
+.popular_title {
 	font-family: Gilroy, Arial, "sans-serif";
 	font-style: normal;
 	font-weight: 800;
@@ -542,7 +567,6 @@ a {
 	line-height: 58px;
 	color: var(--basic-black);
 }
-
 
 .breadcrumbs {
 	font-family: "Open Sans", Arial, "sans-serif";
