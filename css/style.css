@@ -152,11 +152,11 @@ a {
 }
 
 .navigation_user_list_link:hover {
-	opacity: 0.50;
+	color: rgba(0, 0, 0, 0.5);
 }
 
 .navigation_user_list_link:active {
-	opacity: 0.15;
+	color: rgba(0, 0, 0, 0.1);
 }
 
 .navigation_user_list {
@@ -422,7 +422,8 @@ a {
 	width: 136px;
 	height: 32px;
 	display: flex;
-	justify-self: space-between;
+	justify-content: space-between;
+	margin: 67px auto 0px;
 }
 
 .address_text {
@@ -431,7 +432,7 @@ a {
 	font-weight: 300;
 	font-size: 15px;
 	line-height: 20px;
-	color: var(--basic-black);
+	color: var(--basic-white);
 }
 .phone.phone_link {
 	font-family: "Open Sans", Arial, "sans-serif";
@@ -441,6 +442,12 @@ a {
 	line-height: 20px;
 	letter-spacing: 0em;
 	text-align: left;
+	color: var(--basic-white);
+}
+
+.phone {
+	display: flex;
+	margin-top: 73px;
 }
 
 .footer_logo_htmlacademy {
@@ -453,11 +460,12 @@ a {
 	padding: 46px 0px 65px 0px;
 }
 
-.main_footer a, .main_footer li a, .main_footer p  {
+.footer_link  {
 	color: var(--basic-white);
+
 }
 
-.navigation_services_list_footer li a {
+.navigation_services_list_footer {
 	margin: 0;
 	padding: 0;
 	font-family: Gilroy, Arial, "sans-serif";
@@ -467,7 +475,11 @@ a {
 	line-height: 22px;
 	letter-spacing: 0.2em;
 	text-transform: uppercase;
-	display: block;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 138px;
+	width: 423px;
+	height: 22px;
 }
 
 .container_footer {
@@ -478,6 +490,10 @@ a {
     grid-template-columns: repeat(3, 1fr);
 }
 
+.footer_col_2 {
+	margin-right: 46px;
+}
+
 .navigation_user_list_footer {
 	margin: 0;
 	padding: 0;
@@ -486,7 +502,10 @@ a {
 	font-weight: 300;
 	font-size: 15px;
 	line-height: 20px;
-	display: block;
+	widows: 352px;
+	height: 20px;
+	display: flex;
+	justify-content: space-between;
 }
 
 .address_text {
