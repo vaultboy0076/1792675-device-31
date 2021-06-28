@@ -90,12 +90,12 @@ a {
 
 .main_header_logo:hover {
 	background: url("../img/logo/logo.svg");
-	opacity: 50%;
+	color: rgba(0, 0, 0, 0.5);
 }
 
 .main_header_logo:active {
 	background: url("../img/logo/logo.svg");
-	opacity: 15%;
+	color: rgba(0, 0, 0, 0.1);
 }
 
 /*.navigation_user_list_item:before {
@@ -173,6 +173,14 @@ a {
 }
 .navigation_services_list:first-child {
 	padding: 324px;
+}
+
+.navigation_services_list_link:hover {
+	color: rgba(0, 0, 0, 0.5);
+}
+
+.navigation_services_list_link:active {
+	color: rgba(0, 0, 0, 0.1);
 }
 
 .visually-hidden {
