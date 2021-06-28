@@ -60,30 +60,6 @@
 	align-content: start;
 }
 
-/*.page-catalog {
-  display: grid;
-  grid-template-columns: 180px 1fr;
-  align-content: start;
-  outline: 5px solid rgba(255, 0, 0, 0.7);
-  outline-offset: -5px;
-}
-
-.page-catalog .popular_title {
-  grid-column: 1 / -1;
-  outline: 5px solid rgba(0, 255, 0, 0.7);
-  outline-offset: -5px;
-}
-
-.page-catalog .breadcrumbs {
-  outline: 5px solid rgba(0, 0, 255, 0.7);
-  outline-offset: -5px;
-}
-
-.product_filter {
-  outline: 5px solid rgba(255, 0, 255, 0.7);
-  outline-offset: -5px;
-}*/
-
 li {
 	list-style-type: none;
 }
@@ -434,19 +410,19 @@ a {
 	line-height: 20px;
 	color: var(--basic-white);
 }
-.phone.phone_link {
+.phone, .phone_link {
 	font-family: "Open Sans", Arial, "sans-serif";
 	font-size: 15px;
 	font-style: normal;
 	font-weight: 300;
 	line-height: 20px;
 	letter-spacing: 0em;
-	text-align: left;
 	color: var(--basic-white);
 }
 
 .phone {
 	display: flex;
+	align-items: flex-end;
 	margin-top: 73px;
 }
 
@@ -486,8 +462,8 @@ a {
 	display: grid;
 	width: 1150px;
 	margin: 0 auto;
-    padding: 0 10px;
-    grid-template-columns: repeat(3, 1fr);
+  padding: 0 10px;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .footer_col_2 {
@@ -515,6 +491,30 @@ a {
 
 /*Каталог*/
 
+/*.page-catalog {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  align-content: start;
+  outline: 5px solid rgba(255, 0, 0, 0.7);
+  outline-offset: -5px;
+}
+
+.page-catalog .popular_title {
+  grid-column: 1 / -1;
+  outline: 5px solid rgba(0, 255, 0, 0.7);
+  outline-offset: -5px;
+}
+
+.page-catalog .breadcrumbs {
+  outline: 5px solid rgba(0, 0, 255, 0.7);
+  outline-offset: -5px;
+}
+
+.product_filter {
+  outline: 5px solid rgba(255, 0, 255, 0.7);
+  outline-offset: -5px;
+}*/
+
 .product_filter {
 	background-color: var(--basic-grey-light);
 	font-family: "Open Sans", Arial, "sans-serif";
@@ -523,16 +523,31 @@ a {
 	font-size: 14px;
 	line-height: 19px;
 	color: var(--basic-black);
+	border: none;
 }
 
-.product_filter fieldset h3 {
+.catalog_heading {
+	font-family: Gilroy;
+	font-style: normal;
 	font-weight: 800;
 	font-size: 16px;
 	line-height: 20px;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
 }
 
-.product_filter fieldset input{
+.filtration_product {
+	font-family: Open Sans;
+	font-style: normal;
 	font-weight: normal;
+	font-size: 14px;
+	line-height: 19px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.filtration_product_category {
+	color: var(--basic-black);
 }
 
 .product {
@@ -597,7 +612,17 @@ a {
 	opacity: 0.3;
 }
 
-.pagination button {
+.pagination {
+	background-color: #EBEBEB;
+	display: flex;
+}
+
+.pagination:first-child, .pagination:last-child {
+	width: 120px;
+	height: 70px;
+}
+
+.pagination_item {
 	font-family: Gilroy, Arial, "sans-serif";
 	font-style: normal;
 	font-weight: 800;
@@ -606,9 +631,5 @@ a {
 	letter-spacing: 0.1em;
 	text-transform: uppercase;
 	color: var(--basic-black);
-	background-color: #EBEBEB;
-}
-
-.pagination {
 	background-color: #EBEBEB;
 }
