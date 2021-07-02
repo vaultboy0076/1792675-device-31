@@ -70,7 +70,6 @@ a {
 
 .main_header_navigation {
 	background-color: var(--special-yellow);
-	display: grid;
 	height: 300px;
 }
 
@@ -136,25 +135,78 @@ a {
 }
 
 .navigation_user_list {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	margin: 0;
+	/*display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;*/
+	display: flex;
+	margin: 29px 0px 50px;
 	padding: 0;
 	font-family: "Open Sans", Arial, "sans-serif";
 	font-style: normal;
 	font-weight: 300;
 	font-size: 15px;
 	line-height: 20px;
-
 }
 
-.navigation_services_list li a {
+.navigation_user_list_item:nth-child(2) {
+	margin-right: 216px;
+}
+
+.navigation_user_list_item:nth-child(3) {
+	margin-right: 49px;
+}
+
+.navigation_user_list {
+	margin-right: 60px;
+}
+
+.navigation_services_list_item:first-child {
+	margin: 0px 324px 0px 60px;
+}
+
+.navigation_services_list_item:nth-child(2) {
+	margin-right: 38px;
+}
+
+.navigation_services_list_item:nth-child(3) {
+	margin-right: 111px;
+}
+
+.search_website {
+	background-color: var(--special-yellow);
+	border:none;
+  padding: 1px 170px 1px 35px;
+  font-family: "OpenSans","Arial", sans-serif;
+  font-size: 15px;
+  line-height: 36px;
+  position: relative;
+}
+
+.search_button:before{
+  content: "";
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  top: 15px;
+  left: 5px;
+  background-image: url(../img/icons/search.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.search_button:hover{
+  color:rgba(255,255,255, 1);
+  background-color: var(--basic-black);
+  display:block;
+  position: relative;
+}
+
+.navigation_services_list a {
 	color: var(--basic-black);
 }
 
 .navigation_services_list {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
+	display: flex;
+	/*grid-template-columns: 1fr 1fr 1fr 1fr;*/
 	margin: 0;
 	padding: 0;
 	font-family: Gilroy, Arial, "sans-serif";
@@ -191,9 +243,9 @@ a {
 }
 
 .container {
-  width: 960px;
-  margin: 0 auto;
-  padding: 0 10px;
+	width: 1160px;
+	margin: 0 auto;
+	padding: 0 20px;
 }
 
 .slider_title {
@@ -270,6 +322,7 @@ a {
 	display: grid;
 	grid-template-columns: repeat(6, 1fr);
 	column-gap: 40px;
+	padding: 0px;
 }
 
 .popular_list li {
