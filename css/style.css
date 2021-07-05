@@ -422,7 +422,7 @@ a {
 .about_info {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	margin: 0 140px 0 140px;
+	/*margin: 0 140px 0 140px;*/
 }
 
 .about {
@@ -464,7 +464,8 @@ a {
 	height: 32px;
 	display: flex;
 	justify-content: space-between;
-	margin: 67px auto 0px;
+	/*margin: 67px auto 0px;*/
+	padding: 0px;
 }
 
 .address_text {
@@ -514,8 +515,19 @@ a {
 	margin-right: auto;
 }
 
-.footer_row_one, .footer_row_two {
+/*.footer_strip {
 	display: flex;
+	width: 80px;
+	height: 7px;
+}*/
+
+.footer_row_one {
+	display: flex;
+}
+
+.footer_row_two {
+	display: flex;
+	margin-top: 40px;
 }
 
 .navigation_services_list_footer {
@@ -523,7 +535,7 @@ a {
 	justify-content: space-between;
 	width: 423px;
 	height: 22px;
-	margin: 39px auto 0px auto;
+	margin: 0px auto 0px auto;
 	font-family: Gilroy, Arial, "sans-serif";
 	font-style: normal;
 	font-weight: 800;
@@ -561,6 +573,7 @@ a {
 }
 
 .footer_logo_htmlacademy {
+	display: flex;
 	width: 115px;
 	height: 33px;
 }
