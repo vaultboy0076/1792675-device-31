@@ -332,8 +332,11 @@ a {
 .popular_list li {
 	height: 160px;
 	width: 160px;
-	background: var(--special-yellow-light)
-	url("img/popular/popular-1.svg") 160px 160px no-repeat;
+	background color: var(--special-yellow-light);
+}
+
+.popular_list li {
+	background-image: url(../img/popular/popular_1.png) no-repeat;
 }
 
 /*.popular_item:before {
@@ -342,6 +345,11 @@ a {
 	width: 124px;
 	height: 44px;
 }*/
+
+.services {
+	padding: 0px;
+}
+
 
 .services.delivery {
 	/*width: 136px;
@@ -496,6 +504,7 @@ a {
 	width: 1160px;
 	height: 324px;
 	padding: 0px 140px 0px 140px;
+	/*margin-top: 86px;*/
 	margin: 86px auto 0px auto;
 	background-color: var(--basic-dark);
 }
